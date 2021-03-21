@@ -15,9 +15,10 @@
                 <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
             </div>
             
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Enter Username" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
+            <form id="login" class="input-group" name="form1" action="login.php" method="POST">
+                <input type="email" name="email" class="input-field" placeholder="Enter Email" required>
+                <input type="text" name="username" class="input-field" placeholder="Enter Username" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
             <br />
             <br />
             <br />
@@ -27,10 +28,10 @@
                 <button type="submit" class="submit-btn">Log In</button>
             </form>
 
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="Enter Username" required>
-                <input type="email" class="input-field" placeholder="Enter EmailID" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
+            <form id="register" class="input-group" name="form2" action="register.php" method="POST">
+                <input type="text" name="new_username" class="input-field" placeholder="Enter Username" required>
+                <input type="email" name="email" class="input-field" placeholder="Enter EmailID" required>
+                <input type="password" name="password1" class="input-field" placeholder="Enter Password" required>
                 <br />
                 <br />
                 <button type="submit" class="submit-btn">Sign Up</button>
