@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2021 at 09:15 AM
+-- Generation Time: Mar 25, 2021 at 12:05 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -24,6 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `category_name` varchar(30) NOT NULL,
+  `Quantity` varchar(10) NOT NULL,
+  `Price` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`category_name`, `Quantity`, `Price`) VALUES
+('', '', ''),
+('c1', '12', '1200'),
+('c2', '12', '1200'),
+('c3', '1400', '14');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `login`
 --
 
@@ -38,43 +60,28 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`email`, `username`, `password`) VALUES
-('demo1@demo.com', 'demo1', 'demo1');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `register`
---
-
-CREATE TABLE `register` (
-  `new_username` varchar(100) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `password1` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `register`
---
-
-INSERT INTO `register` (`new_username`, `email`, `password1`) VALUES
-('demo', 'demo@demo.com', 'demo');
+('abc@abc.com', 'abc', 'abc123'),
+('admin1@admin.com', 'admin1', 'admin11234567'),
+('admin@admin.com', 'admin', 'admin@123'),
+('demo1@demo.com', 'demo1', 'demo1'),
+('pop@pop.com', 'pop', 'pop123'),
+('qwerty@qwerty.com', 'qwerty', 'qwerty123');
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`category_name`);
+
+--
 -- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`email`);
-
---
--- Indexes for table `register`
---
-ALTER TABLE `register`
-  ADD PRIMARY KEY (`email`),
-  ADD UNIQUE KEY `new_username` (`new_username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
