@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculator</title>
+
+    <head>
+        <style>
+            .grid-container{
+                display: grid;
+                row-gap: 5px;
+                column-gap: 5px;
+                grid-template-columns: auto auto auto auto;
+                background-color: orange;
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .grid-item{
+                background-color: palevioletred;
+                border: 1px solid black;
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .itemscr{
+                grid-column: 1/5;
+                height: 50px;
+                background-color:aquamarine;
+            }
+            .itemc{
+                grid-column: 1/3;
+            }
+            .itemequ{
+                grid-row: 5/7;
+                grid-column: 4/5;
+            }
+            #clrbtn{
+                size: 50px;
+            }
+        </style>
+    </head>
+<body>
+
+<h1>Calculator</h1>
+<p>Calculator Assignment</p>
+
+<div class = "grid-container">
+    <div class = "grid-item itemscr"> </div>
+    <div class = "grid-item itemc"><button type = "button" id="clrbtn">C</button></div>
+    <div class = "grid-item"><button type = "button">%</button></div>
+    <div class = "grid-item"><button type = "button">/</button></div>
+    <div class = "grid-item"><button type = "button">7</button></div>
+    <div class = "grid-item"><button type = "button">8</button></div>
+    <div class = "grid-item"><button type = "button">9</button></div>
+    <div class = "grid-item"><button type = "button">*</button></div>
+    <div class = "grid-item"><button type = "button">4</button></div>
+    <div class = "grid-item"><button type = "button">5</button></div>
+    <div class = "grid-item"><button type = "button">6</button></div>
+    <div class = "grid-item"><button type = "button">-</button></div>
+    <div class = "grid-item"><button type = "button">1</button></div>
+    <div class = "grid-item"><button type = "button">2</button></div>
+    <div class = "grid-item"><button type = "button">3</button></div>
+    <div class = "grid-item itemequ"><button type = "button">=</button></div>
+    <div class = "grid-item"><button type = "button">.</button></div>
+    <div class = "grid-item"><button type = "button">0</button></div>
+    <div class = "grid-item"><button type = "button">1</button></div>
+</div>
+</body>
+</html>
