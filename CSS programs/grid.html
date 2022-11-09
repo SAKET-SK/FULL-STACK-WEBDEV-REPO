@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container
+        {
+            display: grid;
+            /* row-gap: 10px;
+            column-gap: 5px; */
+            gap:5px;
+            background-color: tomato;
+            border: 1px solid black;
+         
+         grid-template-columns: auto auto auto auto 10%; 
+        }
+        .grid-item
+        {
+            /* height:20px;
+            width:20px;*/
+            background-color: yellowgreen; 
+            border:1px solid black;
+
+
+        }
+          .item5
+        {
+             grid-row:1/5; 
+            /* grid-column: 5/6; */
+        }  
+         .item6
+        {
+            grid-column:2/5;
+        } 
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+
+    </div>
+</body>
+</html>

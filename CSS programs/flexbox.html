@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .flex-container
+    {
+        display:flex;
+        height:50vh;
+        width: 50vw;
+        border:2px blue solid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        margin:50px;
+    }
+    .flex-item
+    {
+        height:100px;
+        width:100px;
+        background-color: yellow;
+        border:yellowgreen 1px solid;
+        margin: 2px;
+     
+    }
+    .item1
+    {
+        order: 4;
+        align-self: flex-start;
+    }
+    .item2
+    {
+        order: 100;
+        flex-grow: 5;
+          flex-shrink: 2  ;
+    }
+    .item3{
+        flex-grow: 2;
+    }
+    .item4{
+        align-self: flex-end;
+
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. flex-container
+            flex-direction: row/row-reverse/column/column-reverse
+            justify-content: align items on main axis
+            align-item:align items on cross axis
+            flex-wrap: used to make flex responsive
+        2. flex item
+            order: item with max order will be placed at last
+            flex-grow: item grows to use the space
+            flex-shrink: item shrinks to give responsive behaviour
+            align-self: align itself without affecting other elements
+     -->
+    <div class="flex-container">
+
+        <div class="flex-item item1">box1</div>
+        <div class="flex-item item2">box2</div>
+        <div class="flex-item item3">box3</div>
+        <div class="flex-item item4">box4</div>
+
+    </div>
+</body>
+</html>

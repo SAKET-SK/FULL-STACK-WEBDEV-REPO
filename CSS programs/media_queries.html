@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        p{
+            background-color: yellowgreen;
+        }
+
+        /* @media screen and (max-width:800px) {
+            p{
+                background-color: tomato;
+            }
+        }*/
+        /* @media (max-width:800px) 
+        {
+            h1{
+                color:blue;
+            }
+        } */
+
+        /* @media print
+        {
+            h1{
+                color:red;
+            }
+        } */
+        @media (orientation:landscape) and (max-width:700px) {
+            p{
+                /* background-color: turquoise; */
+                background-image: url(images/penguin-158551__340.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+        <h1> Media queries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis mollitia dolores sequi distinctio ut commodi possimus nobis, veritatis culpa. Sapiente praesentium culpa nemo porro vero optio vitae ratione, laborum reprehenderit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam mollitia minus quidem ducimus sunt obcaecati delectus cumque neque perspiciatis blanditiis necessitatibus minima, voluptate, a molestiae. Ratione, natus molestiae cum quo dolorem magnam architecto cumque totam error numquam corrupti esse eius!
+        </p>
+        <h1>
+            Second heading
+        </h1>
+        <h4> Sub heading</h4>
+
+</body>
+</html>

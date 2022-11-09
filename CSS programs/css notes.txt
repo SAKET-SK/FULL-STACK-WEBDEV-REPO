@@ -1,0 +1,120 @@
+colors:
+*******
+
+    1. specify using color name
+
+    2. use hex numbers eg. #FF0000
+    
+    3. use rgb() where eg. rgb(12,50,200)
+    numbers given in rgb() are from ast import increment_lineno
+from turtle import screensize
+from 0 to 255
+
+
+
+Background:
+***********
+
+1. Background color:
+    values are Same as color property
+
+2. Opacity:
+
+    values range from 0.0 to 1.0
+    1.0 full opaque
+
+Backgroun image
+***************
+
+url(): specify the path
+
+Background size:
+***************
+    
+    in form pixels
+    in percentage
+    contain: fits to the containts of the element
+
+Background position:
+********************
+
+
+
+background:
+***********
+    shorthand prpoerty alllows us to set multiple properties in one line
+
+    In this we can provide size only after position using '/' eg. left/60px
+
+borders:
+********
+
+    1. border-style
+    2. border-color
+    3. border-width
+
+    Shorthands
+    1. border-top
+    2.border-bottom
+    3.border-left
+    4. border-right
+
+    boder-style:solid dotted    
+        
+        first style applied to top and bottom
+        second style applied to left & right
+
+Margin:
+*******
+    space otside border
+
+Padding:
+*******
+    space between the content & border
+
+Height of element:
+*****************
+   margin top + border top + padding top + height of content + padding bottom +border bottom + margin bottom
+
+width of element
+*****************
+   margin left+ border left + padding left + wdith of content +padding right +border right +margin right
+
+text-align:
+***********
+
+font-family:
+************
+
+font size:
+**********
+
+
+pseudo class:
+*************
+    keyword added to selectors used to define special effects to elements
+
+
+n-Child
+only-child
+n-lastoftype
+
+pseudo elements:
+****************
+    special pat of the element
+
+
+display:
+********
+    used to decide how the element will be shown on screen
+    inline
+    block
+    none
+    inline-block
+
+
+visibility:
+***********
+    If we give value to thi property as hidden. The element will not be shown but space will be their for that element
+
+

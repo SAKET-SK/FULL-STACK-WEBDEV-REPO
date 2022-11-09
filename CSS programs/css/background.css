@@ -1,0 +1,39 @@
+#pid
+{
+    background-color:rgb(145,222,28);
+
+    opacity:1.0;
+    background-image: url("../images/penguin-158551__340.webp");
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+
+#pid{
+
+    background-color: rgb(145,222,28);
+    /* opacity: 0.3; */
+    background-image: url("../images/images.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#pid
+{
+    /* opacity: 0.7; */
+    background-image: url("../images/penguin-158551__340.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+body
+{
+    /* background-color: skyblue;
+    background-image: url(../images/penguin-158551__340.webp);
+    background-repeat:no-repeat;
+    background-size: 10%;
+    background-position: left center;
+    background-attachment: fixed; */
+
+    background: url("../images/penguin-158551__340.webp") no-repeat right bottom/50px fixed #FF1234  ;
+}

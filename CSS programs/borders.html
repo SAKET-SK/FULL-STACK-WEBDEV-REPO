@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        /* p{
+            border-style:solid;
+            border-color: red;
+            border-width: 5px;
+        } */
+
+        #pid2{
+            border-top: solid red 2px;
+            border-bottom: dashed pink 4px;
+            border-left: dotted blue 10px;
+            border-right: groove yellow 12px;
+        }
+        #pid1{
+            border-style: solid;
+            border-color: aquamarine;
+            border-width: 70px 30px 10px 5px;
+        }
+        #pid3{
+            /* border-style:dotted dashed top& bottom left&right*/
+            /* border-style:groove dotted dashed; /* top left&right bottom */
+
+            border-style: solid dashed dotted groove;  /*top right bottom left*/
+
+            border-width: 10px;  
+
+        }
+        #span1{
+            border-style: dashed;
+            /* border: solid dotted red green deeppink 50px 30px 20px; */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p id="pid1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor accusamus ea autem, quod, ipsum quis maiores consequatur blanditiis molestiae placeat, dolore aspernatur. Vero ipsa iure laborum ipsum minima quod magnam fuga nulla cum excepturi libero eaque cumque perferendis ullam earum dolorum officiis, eligendi rem dolor! Et eveniet ad repellendus nisi?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quo accusantium soluta! Cum nam suscipit perferendis, iste molestiae architecto, alias sequi, ab similique ad voluptas est eligendi repellendus. Optio perspiciatis, quis quisquam eum, laudantium quaerat magnam enim praesentium eligendi, voluptatem amet voluptate dolor omnis modi eos nulla ab placeat dolores. Fugit quod dolorem voluptates nam voluptatum numquam officia, excepturi vitae.
+        </p>
+
+        <p id="pid2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro consequatur mollitia. Quaerat illo reprehenderit dolor eos enim odio iusto ducimus obcaecati assumenda ullam fugiat fugit animi tempora, qui accusamus.</p>
+
+        <p id ="pid3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis placeat sit harum, excepturi molestias distinctio ratione et labore facere autem dolore amet tempora optio iusto aliquam numquam fugiat consectetur eum deleniti? Cumque facilis tempora quod nisi quas adipisci deserunt, natus, saepe sed explicabo a quam at enim voluptate laboriosam distinctio rerum harum accusantium ullam vel inventore iure. Sequi incidunt animi autem, aliquid sunt obcaecati dolores tempora nam molestias ex similique?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit velit quos sapiente animi eos beatae, voluptatem sed ut corrupti?</p>
+    
+
+    <span id="span1">This is span which is outside div </span>
+</body>
+</html>

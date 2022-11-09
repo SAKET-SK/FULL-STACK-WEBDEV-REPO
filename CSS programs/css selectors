@@ -1,0 +1,101 @@
+*****
+name:
+******
+    name is used to indentify (refer) element in backend
+
+value:
+*****
+    this is the content of element (fetched in back end)
+
+
+id:
+******
+   used to refer the element in front end(in html)
+
+    It should be unique
+
+    It is not mandetory to provide id to each element
+    to access id in css we use '#'
+
+
+class:
+******
+    Catagory
+    No. of elements can beling to one class
+    One element can belong to multiple classes
+    When we apply multiple classes to same element use space to separate class names
+    to access class  in css we use '.'
+    *When we apply same property in multiple classes for a element, the last class in css we be applied*
+
+
+group selector:
+***************
+    separte selectors by comma(,)
+
+    p, div, #id1
+    {
+    ------
+    }
+
+Universal selector:
+******************
+   All elements including body element
+
+   *
+   {
+    -----
+   }
+
+element class selector:
+*********************
+   All the elements with the given class
+
+   p.class1
+   {
+    --------
+   }
+   All paragraphs with class as class1 will be selected
+
+
+element id selector:
+********************
+   All elements with specific id
+
+   h1#html_id
+   {
+    -----
+   }
+
+   Never used as id are unique
+
+child combinator:
+*******************
+  Selects the immidiate child of given element
+
+  div > span
+  {
+    ------
+  }
+
+  Selects all the spans which are immidiate child of div
+
+descendant combinator:
+*********************
+  Selects the all children of given element (which may be at any level)
+
+  div  span
+  {
+    ------
+  }
+
+  Selects all the spans which are  child of div
+
+
+attribute selector:
+**********************
+     selects the elementwith specific property
+     
+     a[href="https://www.amazon.in/"]
+     {
+         font-size: xx-small;
+     }

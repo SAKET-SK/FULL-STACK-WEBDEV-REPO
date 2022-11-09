@@ -1,0 +1,27 @@
+px:
+   specify size directly in pixel.
+
+    Even If the browser setting changes, it won't affect the size of that element
+
+
+rem:
+  specify the size in terms of root element(relative to root element)
+  eg 1rem : 1 times the size of root element(HTML)
+  We ca n have decimal values for this type
+
+em :
+  specift the size in term of parent element
+  eg 2em means 2 times the size of parent element
+
+vh:
+   specify size in terms of height of view port
+   It is in %factor
+   If the viewport height changes, this value will also change.
+
+vw:
+   specify the size in terms of width of viewport
+   It is in %factor
+   If the viewport width changes, this value will also change.
+
+%:
+   if we use % for font size then it is the % of defaulf font size
