@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            #navigation{
+                background-color: aquamarine;
+                color: black;
+            }
+            nav{
+                display: block;
+            }
+            #left_section{
+                background-color:yellow;
+                width: 200px;
+            }
+            #right_section{
+                background-color:greenyellow;
+                width:200px;
+            }
+            #footer_info{
+                background-color:black;
+                color: aqua;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Assignment</h1>
+        <table width="100%" height="100px">
+            <tr>
+                <td id="navigation">
+                    <nav>
+                  |+|   <a href="#">Home</a> |+|
+                        <a href="#">Dashboard</a> |+|
+                        <a href="#">About US</a> |+|
+                    </nav>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" height="400px">
+            <tr>
+                <td rowspan="4" id="left_section">
+                    <ul>
+                        Courses we Offer:
+                        <li>Java Full Stack</li>
+                        <li>Python Full Stack</li>
+                        <li>MEAN MERN Full Stack</li>
+                        <li>Diploma in Software Testing</li>
+
+                    </ul>
+                </td>
+                <td>Cell 1</td>
+                <td rowspan="4">Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 8</td>
+                <td rowspan="4" id="right_section">
+                    <ul>
+                        Connect with us:
+                        <li>WhatsApp</li>
+                        <li>Telegram</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Cell 2</td>
+                <td colspan="2">Cell 6</td>
+            </tr>
+
+            <tr>
+                <td>Cell 3</td>
+                <td>Cell 7</td>
+                <td>Cell 9</td>
+            </tr>
+        </table>
+        <table width="100%" height="100px">
+            <tr>
+                <td id="footer_info">Copyrights - FirstBit Solution Pvt. Ltd. 2022</td>
+            </tr>
+        </table>
+    </body>
+</html>
