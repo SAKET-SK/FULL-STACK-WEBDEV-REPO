@@ -6,3 +6,9 @@ Collection of basic HTML forms I designed. Login Page - Copy is the form I have 
 4) Login-Page.html :- Basic HTML code of Login Page
 5) pathology_data.sql :- This is database file which will be updated after every updation in the code.
 6) add-category.html :- One can also refer this file for connection to the database, very similar yet bit diffrent from the Login-Page and Category.html (This is inside the Login-Page and Category folder)
+
+
+Output Section:
+- Output of tablecell.html
+
+![tablecell output](https://user-images.githubusercontent.com/60461421/201687656-42db7186-c197-4c01-9be9-cb1eda1632f1.png)
