@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Button</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <style>
+        div{
+            background-color: violet;
+            height:20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-outline1-danger
+        {
+            color:red;
+            border: 1px red solid;
+
+        }
+        .btn-outline1-danger:hover
+        {
+            background-color: red;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-light">Light</button>
+
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline1-danger btn-sm">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light btn-lg">Light</button>
+        <button type="button" class="btn btn-outline-dark disabled">Dark</button>
+    </div>
+</body>
+</html>
