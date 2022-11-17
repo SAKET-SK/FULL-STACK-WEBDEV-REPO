@@ -1,4 +1,5 @@
-Outputs of above Web Pages created with Bootstrap
+Outputs of above Web Pages created with Bootstrap:
+
 alertsbootstrap.html:
 
 ![bs_alerts](https://user-images.githubusercontent.com/60461421/202441182-b9b12298-ffca-4f42-9c06-8ee6c279340c.png)
