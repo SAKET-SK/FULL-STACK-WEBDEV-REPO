@@ -8,6 +8,10 @@ buttonbootstrap.html:
 
 ![bs_buttons](https://user-images.githubusercontent.com/60461421/202436793-a6e14915-f279-4d14-ab4b-cf280e1f0d89.png)
 
+formswitchbootstrap.html:
+
+![bs_formSwitch](https://user-images.githubusercontent.com/60461421/202492259-89abf166-d50e-4aa4-a347-b8f7496d0474.png)
+
 gridbootstrap.html:
 
 ![bs_grid1](https://user-images.githubusercontent.com/60461421/202489335-f06e0f09-e8dc-4e3d-9dba-b3fd7ee4d674.png)
