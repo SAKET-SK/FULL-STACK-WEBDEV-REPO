@@ -44,6 +44,7 @@ navbarbootstrap.html:
 
 survey_form.html:
 
+![bootstrap_survey_form](https://user-images.githubusercontent.com/60461421/205947502-9b3623a3-a70b-42b7-94b6-4096ce904cb2.png)
 
 typographybootstrap.html:
 
