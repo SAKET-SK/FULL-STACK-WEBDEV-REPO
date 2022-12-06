@@ -8,6 +8,8 @@ Outputs
 
 ![array_methods](https://user-images.githubusercontent.com/60461421/205922294-34dddabf-88f6-4542-b178-a433fc3f4174.png)
 
+![array_methods-2](https://user-images.githubusercontent.com/60461421/205922838-a4f4de2d-042e-472e-b193-6faee3c6101c.png)
+
 - console_methods.html, console_methods.js
 
 ![console_output-1](https://user-images.githubusercontent.com/60461421/205919746-0fb147b4-df80-4581-ae22-4f1d4ef6795b.png)
