@@ -4,6 +4,12 @@ Outputs
 
 ![output1](https://user-images.githubusercontent.com/60461421/203928409-d4ae13a8-c6fc-4c60-a5fc-4fd0127199e1.png)
 
+- console_methods.html, console_methods.js
+
+![console_output-1](https://user-images.githubusercontent.com/60461421/205919746-0fb147b4-df80-4581-ae22-4f1d4ef6795b.png)
+
+![console_output-2](https://user-images.githubusercontent.com/60461421/205919759-85d342fa-b344-4499-8d92-c65e2c0fa224.png)
+
 - grade.html, grade.js
 
 ![output_ss](https://user-images.githubusercontent.com/60461421/204737662-22d88829-e145-4d81-bcb0-22480f08b34b.png)
