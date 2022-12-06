@@ -42,6 +42,9 @@ navbarbootstrap.html:
 
 ![bs_navbar](https://user-images.githubusercontent.com/60461421/202496400-c4c94b7e-d808-48df-8a69-b92db1e464e4.png)
 
+survey_form.html:
+
+
 typographybootstrap.html:
 
 ![bs_typography](https://user-images.githubusercontent.com/60461421/202444504-b7c520b4-f263-476c-8378-ad8ce9940632.png)
