@@ -20,6 +20,16 @@ Outputs
 
 ![output_ss](https://user-images.githubusercontent.com/60461421/204737662-22d88829-e145-4d81-bcb0-22480f08b34b.png)
 
+- object_assignment.html, object_assignment.js
+
+![object_output-1](https://user-images.githubusercontent.com/60461421/205933738-e9522030-94c8-4aaf-84a9-5a29b2881937.png)
+
+![object_output-2](https://user-images.githubusercontent.com/60461421/205933760-9bff9cc3-f78b-40ec-99fb-e95380ad9e1d.png)
+
+![object_output-3](https://user-images.githubusercontent.com/60461421/205933779-5ffd4f6d-3be6-4092-96f4-0cb21add52e7.png)
+
+![object_output-4](https://user-images.githubusercontent.com/60461421/205933788-28782339-3992-4e3d-944d-6334384483cb.png)
+
 - popup_dialog_boxes.html, popup_dialog_boxes.js
 
 ![1) popup_alert](https://user-images.githubusercontent.com/60461421/205917550-3dc57441-9812-4f50-ae4e-204bc231e9c2.png)
