@@ -8,6 +8,10 @@ buttonbootstrap.html:
 
 ![bs_buttons](https://user-images.githubusercontent.com/60461421/202436793-a6e14915-f279-4d14-ab4b-cf280e1f0d89.png)
 
+carousel_demo.html:
+
+![bootstrap_carousel](https://user-images.githubusercontent.com/60461421/205936684-eafa139f-120e-4fc0-9c50-ea4bbe53f953.png)
+
 containerbootstrap.html:
 
 ![bs_container](https://user-images.githubusercontent.com/60461421/202495321-f5b34fc8-7a27-4ece-be51-06ba6d104036.png)
