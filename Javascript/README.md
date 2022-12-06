@@ -4,6 +4,10 @@ Outputs
 
 ![output1](https://user-images.githubusercontent.com/60461421/203928409-d4ae13a8-c6fc-4c60-a5fc-4fd0127199e1.png)
 
+- array_methods_assignment.html, array_methods_assignment.js
+
+![array_methods](https://user-images.githubusercontent.com/60461421/205922294-34dddabf-88f6-4542-b178-a433fc3f4174.png)
+
 - console_methods.html, console_methods.js
 
 ![console_output-1](https://user-images.githubusercontent.com/60461421/205919746-0fb147b4-df80-4581-ae22-4f1d4ef6795b.png)
