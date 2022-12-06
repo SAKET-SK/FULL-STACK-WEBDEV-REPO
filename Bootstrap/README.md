@@ -34,6 +34,10 @@ hello.html:
 
 ![bs_hello](https://user-images.githubusercontent.com/60461421/202496822-45538858-8377-4d10-861b-588af6bbe7a7.png)
 
+navbar_demo.html:
+
+![bootstrap_navbar](https://user-images.githubusercontent.com/60461421/205939756-8c08bf48-d88f-497c-b150-6c372969ed89.png)
+
 navbarbootstrap.html:
 
 ![bs_navbar](https://user-images.githubusercontent.com/60461421/202496400-c4c94b7e-d808-48df-8a69-b92db1e464e4.png)
