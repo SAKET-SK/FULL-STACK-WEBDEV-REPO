@@ -1,0 +1,52 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JQuery Selectors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2> JQuery Selectors Practice </h2>
+
+        <p id = "p1">First Paragraph</p>
+        <p id = "p2">Second Paragraph</p>
+        <p class = "c1">Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+
+        <div class = "c1">Click me to bring back hidden paragraphs</div>
+        <br />
+        <div id = "d1">Click me to reveal c1 class elements</div>
+
+        <!--Sometimes JQuery file takes time to load which also results delaying of HTML file execution-->
+        <!--TO avoid long time delays, it is better to have JQuery file inclusion at the end-->
+        <script src="script/jquery-3.6.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            // JQuery code  
+            // console.log("Document is ready");
+
+            // $("p").click(function(){
+            //     console.log("Paragraph is clicked!!");   // To demonstrate the clicking of a paragraph
+            // });
+
+            $("p").click(function(){
+                // $(this).hide(2000);        // hide the current paragraph. Ex:- If paragraph 3 is clicked, only it gets hidden, millisecond for hide animation
+                // if we use remove() here, the item will be hidden permanently, it will not come back even for show() method.
+                $("#p1").hide();   // No matter where you click, only p1 will be hidden
+            });
+
+            $("div").click(function(){   // when div is clicked, all hidden paragraphs are revealed
+                $("p").show();
+            });
+            
+            $("#d1").click(function(){
+                $(".c1").css("background-color","red");
+            });
+
+            });
+        </script>
+    </body>
+</html>
