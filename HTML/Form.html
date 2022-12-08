@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<!--method types: get/ post-->
+    <form action="/demo" method="get">
+        <!-- 
+            name : used to identify element in back end
+            id: used to refer element in front end
+            styling
+            scripting
+            linking
+         -->
+
+         <!-- http://192.168.0.106:5500/demo?name=Deepanjali&pass=oo&dept=IT -->
+         <label for="nameid">Enter name </label>
+        <input type="text" name="name" id="nameid" placeholder="Enter your name">
+
+         <br>
+         <br>
+         <label for="passid">Enter password </label>
+
+         <input type="password" name="pass" id="passid" placeholder="password">
+         <br>
+         <br>
+
+         <label >Department
+
+            <input type="text" name="dept" id="deptid" placeholder="Enter department">
+
+         </label>
+         <br>
+         <br>
+         
+         <br>
+         <br>
+
+         <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender"
+            id="radioid1"
+            value="male" checked>Male
+
+            <input type="radio" name="gender"
+            id="radioid2" value="female" >Female
+
+         </fieldset>
+
+         <br>
+         <br>
+
+         <!-- <input type="submit" value="click">  -->
+
+         <fieldset>
+            <legend>
+                Give preferences
+            </legend>
+                <input type="checkbox"  name="loc1"
+                value="Pune" checked    >Pune
+                
+                <input type="checkbox"  name="loc2"
+                value="Mumbai">Mumbai
+                
+                <input type="checkbox"  name="loc3"
+                value="Chennai">Chennai
+                
+                <input type="checkbox"  name="loc4"
+                value="Banglore">Banglore
+          
+         </fieldset>
+         <br>
+         <!-- <textarea rows=20 cols=30>
+
+         </textarea> -->
+
+
+         <br>
+         <br>
+         <input type="date" value="2022-10-14" min="2022-01-01" max="2022-12-31">
+         <br>
+         <br>
+
+         <select name="list"> 
+            <option value="nothing">Select language</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="CPP">CPP</option>
+         </select>
+
+         <input type="text" list="languages" name="dlist">
+         <datalist id="languages">
+            <option value="nothing">Select language</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="CPP">CPP</option>
+         </datalist>
+         
+
+         <button type="submit">Login</button>
+         <button type="reset">Clear</button>
+
+    </form>
+    
+</body>
+</html>
