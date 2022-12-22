@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
+    background-color: yellowgreen;
+}
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+.navbar ul.nav li a{
+	color: black;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: #000;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+.carousel-inner {
+    height: 400px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto 350px;
+    display: flex;
+    align-items: center;
+  }
+
+  
+/*MEDIA QUERIES*/
+  @media (max-width:750px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      height: 50px;
+      padding: 13px;
+      display: inline-block;
+      width: 50px;
+
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      height: 10px;
+      border-top: 2px solid #eee;
+      display: block;
+      width: 25px;
+
+    }
+    .nav > .nav-links {
+      position: absolute;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+      display: block;
+      width: 100%;
+    }
+  
+      .nav > .nav-links > ul li{
+        padding: 0;
+        background-color: #333;
+        display: block;
+        margin-bottom: 20px;
+         
+      }
+      .nav > .nav-links > ul li a{
+          margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+        margin-left: 33%;
+      }
+
+    /*   */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+  }
