@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700');
+
+*{
+  border-radius: 0px !important;
+  border: 0px !important
+}
+
+body{
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  background: #e1e1e1 !important;
+}
+
+#card-main-container{
+  padding: 20px;
+  background: white;
+}
+
+#outer-card-container h5 a{
+  color: black !important;
+}
+
+#outer-card-container img:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.product-tag p:first-child{
+  background: #1C5D99 !important;
+}
+
+.product-tag p:last-child{
+  background: #F05D5E !important;
+}
+
+.product-tag p a{
+  color: white;
+}
+
+#outer-card-container a{
+  text-decoration: none !important;
+}
+
+#outer-card-container .fa{
+  color: #E94F37;
+}
+
+#outer-card-container p{
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+@media screen and (min-width: 770px) {
+  #card-main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+  }
+}
