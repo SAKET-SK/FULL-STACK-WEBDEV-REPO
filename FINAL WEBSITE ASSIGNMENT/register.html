@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Portal</title>
+    <link rel="stylesheet" href="register.css" />
+    <script src="reg_script.js"></script>
+  </head>
+  <body>
+    <section>
+    <h1 style="color: white; font-size: 37px">Welcome to <span style="color: yellow">Electro's</span> Hall of Electricity ⚡ </h1>
+    <h4 style="color: white"> Only place to <span style="color: aquamarine">shop & learn</span> about electronics 🔌</h4>
+    </section>
+    <section class="container">
+      <header>Registration Portal</header>
+      <form action="index.html" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" id="u_name" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" id="email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required />
+          </div>
+
+          <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" id="phone" placeholder="Enter phone number" required />
+          </div>
+          
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" id="street1" placeholder="Enter street address" required />
+          <input type="text" id="street2" placeholder="Enter street address line 2" required />
+          <div class="column">
+            
+            <input type="text" id="city" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" id="region" placeholder="Enter your region" required />
+            <input type="number" id="postal_code" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <a href="index.html"><button style="background-color: #1F51FF">Submit</button></a>
+      </form>
+    </section>
+  </body>
+</html>
