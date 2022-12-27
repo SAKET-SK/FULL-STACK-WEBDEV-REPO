@@ -1,0 +1,2 @@
+Welcome to Ajax.
+AJAX is Asynchronous JacaScript & XML.

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        .newclass
+        {
+            border:solid 2px red;
+        }
+        #box
+        {
+            height:100px;
+            width:100px;
+            background-color: aqua;
+            position: relative;
+            left:10px
+        }
+    </style>
+    
+  
+</head>
+<body>
+    <H3> JQuery Selectors</H3>
+    <P id="p1">This is First paragraph</P>
+    <p id="p2">This is Second paragraph</p>
+    <p class="c1">This is Third paragraph</p>
+    <p>This is Forth paragraph</p>
+    <div class="c1"> This is div tag</div>
+    <div id="d2">This is second div</div><br><BR>
+     <div id="d3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex aut qui minima molestias alias incidunt placeat deleniti quia labore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex aut qui minima molestias alias incidunt placeat deleniti quia labore.
+       </div>
+       <br><BR>
+        <div id="box">
+
+        </div>
+    <button id="btntoggle">Toggle para 2</button>
+   
+    <button id="btnfadeOut">Fade out</button>
+    <button id="btnfadeIn">Fade In</button>
+    <button id="btnSlideup">Slide up</button>
+    <button id="btnSlidedown">Slide down</button>
+    <button id="btncss">Add css</button>
+
+    <button id="btnanination">Move</button>
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //console.log("Document is ready");
+            $("p").click(function(){
+
+                // $(this).hide(5000);
+                // $(this).remove();
+                $("#p1").hide();
+            });
+            $("div").click(function(){
+                $("p").show();
+            });
+            $("#d2").click(function(){
+
+                // $(".c1").css("background-color","yellow");
+                $("#p2").toggle();
+
+            });
+
+            $("#btntoggle").click(function(){
+
+                $("#p2").toggle();
+                // $("p:first").css({"background-color":"yellowgreen","color":"red"});
+                // $("#d2").addClass("newclass");
+            })
+            $("#btnfadeOut").click(function()
+            {
+                $("#d3").fadeOut(2000);
+            })
+            $("#btnfadeIn").click(function()
+            {
+                $("#d3").fadeIn(1000);
+            })
+
+            $("#btnSlideup").click(function()
+            {
+                $("#box").slideUp();
+            })
+            $("#btnSlidedown").click(function()
+            {
+                $("#box").slideDown();
+            })
+
+            $("#btnanination").click(function()
+            {
+                $("#box").animate({"left":"+=250px"},2000);
+            })
+            $("#btncss").click(function(){ 
+
+
+                // $("p:first").css("background-color","aqua");
+                $("p:first").css({"background-color":"black","color":"aqua","border":"2px red solid"})
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>

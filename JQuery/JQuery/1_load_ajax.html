@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            border:1px black solid;
+            height:100px,
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">Information will load here</p>
+        <button id="btnload">GetInfo</button>
+
+
+    </div>
+<br>
+    <div>
+        <p id="p2">Information will load here</p>
+        <button id="btnajax">GetInfo(ajax)</button>
+
+
+    </div>
+<br>
+    <div>
+        <p id="p3">Information will load here</p>
+        <button id="btnget">GetInfo(get)</button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btnload").click(function(){
+
+             //   Load data from the server and place the returned HTML into the matched elements.
+               $("#p1").load("data.txt",function(){
+                        console.log("Data loaded....")
+                    })
+            })
+
+            //Perform an asynchronous HTTP (Ajax) request.
+            $("#btnajax").click(function(){
+
+                 $.ajax({
+                    "url":"data.txt",
+                    "method":"get",
+                   "datatype":"text"}).done(function(msg){
+                    console.log(msg);
+                    $("#p2").html(msg);
+                    
+                   }).fail(function(msg){
+
+                    console.log(msg);
+                    console.log(msg.status);
+                    console.log(msg.statement);
+                   })
+            
+
+        })
+
+        $("#btnget").click(function(){
+
+            
+            $.get( "https://code.jquery.com/jquery-3.6.1.min.js", function( data ) {
+                    $("#p3").html( data );
+                     alert( "Load was performed." );
+
+        })
+    })
+})
+    </script>
+</body>
+</html> 
