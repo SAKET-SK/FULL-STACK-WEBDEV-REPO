@@ -1,0 +1,26 @@
+table{
+            border:solid 3px black;
+            width:80vw;
+            border-collapse: collapse;
+           
+        }
+        td , th{
+            border:#12AB34 solid 2px;
+            border-radius: 25px 5px 10px 15px;
+            padding: 20px;
+            letter-spacing: 5px;
+            
+        }
+        td{
+            text-align: center;
+            /* height: 20vh; */
+        }
+        th:nth-child(3)
+        {
+            text-decoration: underline;
+            width:60vw;
+
+        }
+        /* th{
+            border:#12AB34 solid 2px;
+        } */
