@@ -1,0 +1,29 @@
+ a:link
+        {
+            color:red;
+        }
+
+        button:hover
+        {
+            background-color: yellowgreen;
+        }
+        div{
+            background-color: #ff43AB;
+            /* height: 200px;
+            width:300px */
+        }
+        div:empty
+        {
+            border:solid 3px;
+        }
+        p:first-child
+        {
+            color:turquoise;
+            background-color: black;
+        }
+        p::first-letter
+        {
+            font-size: 2em;
+            color:beige;
+            text-transform: uppercase;
+        }
