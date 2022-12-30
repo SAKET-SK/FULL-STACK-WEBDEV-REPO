@@ -1,0 +1,30 @@
+/* p{
+            border-style:solid;
+            border-color: red;
+            border-width: 5px;
+        } */
+
+        #pid2{
+            border-top: solid red 2px;
+            border-bottom: dashed pink 4px;
+            border-left: dotted blue 10px;
+            border-right: groove yellow 12px;
+        }
+        #pid1{
+            border-style: solid;
+            border-color: aquamarine;
+            border-width: 70px 30px 10px 5px;
+        }
+        #pid3{
+            /* border-style:dotted dashed top& bottom left&right*/
+            /* border-style:groove dotted dashed; /* top left&right bottom */
+
+            border-style: solid dashed dotted groove;  /*top right bottom left*/
+
+            border-width: 10px;  
+
+        }
+        #span1{
+            border-style: dashed;
+            /* border: solid dotted red green deeppink 50px 30px 20px; */
+        }
