@@ -1,0 +1,13 @@
+/* <selector>
+            {
+                property:value;
+            } */
+            h1
+            {
+                color:red;
+                /* background-color:cornsilk ; */
+            }
+
+            body{
+                background-color: yellow;
+            }
