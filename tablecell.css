@@ -1,0 +1,24 @@
+table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            #navigation{
+                background-color: aquamarine;
+                color: black;
+            }
+            nav{
+                display: block;
+            }
+            #left_section{
+                background-color:yellow;
+                width: 200px;
+            }
+            #right_section{
+                background-color:greenyellow;
+                width:200px;
+            }
+            #footer_info{
+                background-color:black;
+                color: aqua;
+                text-align:center;
+            }
