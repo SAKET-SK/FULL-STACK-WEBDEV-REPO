@@ -1,0 +1,40 @@
+.flex-container
+    {
+        display:flex;
+        height:50vh;
+        width: 50vw;
+        border:2px blue solid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        margin:50px;
+    }
+    .flex-item
+    {
+        height:100px;
+        width:100px;
+        background-color: yellow;
+        border:yellowgreen 1px solid;
+        margin: 2px;
+     
+    }
+    .item1
+    {
+        order: 4;
+        align-self: flex-start;
+    }
+    .item2
+    {
+        order: 100;
+        flex-grow: 5;
+          flex-shrink: 2  ;
+    }
+    .item3{
+        flex-grow: 2;
+    }
+    .item4{
+        align-self: flex-end;
+
+    }
+
