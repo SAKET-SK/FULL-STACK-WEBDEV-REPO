@@ -1,0 +1,69 @@
+body{
+            margin:0px
+        }
+        #b1{
+            height:100px;
+            width: 100px;
+            background-color: aqua;
+            position: static;
+            border:2px solid black;
+            z-index: 1;
+          
+        }
+        #b2
+        {
+            
+            height:100px;
+            width: 100px;
+            background-color: pink;
+              /* shifts the element in relation to its normal position 
+            space in normal position is maintained*/
+            position:relative;
+            border:2px solid black;
+            top:50px;
+            left:30px;
+            /* z-index: -5; */
+        }
+        #b3
+        {
+            
+            height:100px;
+            width: 100px;
+            background-color:yellow;
+            border:2px solid black;
+            /* shifts the element in relation to parents relative position 
+            space in normal position is not maintained*/
+            position: absolute;  
+            top:40px;
+            left:30px;
+            z-index: 300;
+        }
+        #b4
+        {
+            height:100px;
+            width: 100px;
+            background-color:violet;
+            border:2px solid black;
+            /* The position remains fixed even if we scroll the page */
+            position: fixed;  
+            top:90px;
+            right:50px;
+            z-index: 3;
+            
+        }
+        #b5
+        {
+            background-color: tomato;
+            /* at start it will at original position & after scrolling sticks to given position */
+            position: sticky;
+            top:20px;
+        }
+        .container
+        {
+            height: 300vh;
+            background-color: yellowgreen;
+            position: relative;
+            top:20px;
+            left:30px;
+
+        }
