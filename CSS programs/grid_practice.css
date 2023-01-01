@@ -1,0 +1,26 @@
+ .grid-container
+        {
+            display:grid;
+            /* no of columns woth width */
+            grid-template-columns: auto auto auto auto 10%;
+            gap:10px;
+            border:2px solid black;
+            background-color: tomato;
+
+        }
+        .grid-item
+        {
+            /* height: 200px;
+            width: 200px; */
+            background-color: violet;
+            border: 1px solid red;
+        }
+        #item7
+        {
+            grid-column: 2/5;
+        }
+        .item5
+        {
+            grid-row: 1/4;
+            grid-column: 5/6;
+        }
