@@ -1,0 +1,12 @@
+// 1. create project eg. project1(folder)
+// 2. Create src & dest folders in project (project1)
+// 3. execute command from terminal as tsc --init
+// tsconfig.json file will be created
+//4. Give the src folder name for rootDir
+//5. Give the dest folder name for outDir
+//6. Create .ts file in src folder
+//7. Execite tsc command
+// .js file will be created in dest folder
+//To see output
+// In HTML file write like this
+// <script src="./dest/2_types.js"></script>
