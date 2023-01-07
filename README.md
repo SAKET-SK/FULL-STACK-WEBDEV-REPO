@@ -1,5 +1,5 @@
 # My Full Stack Development Journey Mapper
-Collection of basic HTML forms I designed as I learn Full Stack Web developemnt. All the code which I will be writing during the whole training is to be documented here in this repository. 
+Collection of basic HTML forms I designed as I learn Full Stack Web development. All the code which I will be writing during the whole training is to be documented here in this repository. 
 
 Folder Named Login Page - Copy is the form I have been working with. In that Databases are also connected and sql file is shared with you guys. It is recommeded to use XAMPP. Here below is shared which folder is for what purpose:
 
