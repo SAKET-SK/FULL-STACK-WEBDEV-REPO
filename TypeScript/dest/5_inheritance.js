@@ -8,7 +8,7 @@ class PersonClass {
     }
     display() {
         console.log("Details of Person Object");
-        // Printing using Template Literal
+        // Printing using Template Literal (`)
         console.log(`Name: ${this.name} | Age: ${this.age} | Address: ${this.address}`);
     }
 }
