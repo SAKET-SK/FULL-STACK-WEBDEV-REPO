@@ -16,3 +16,7 @@ Image Toggler App:
 
 https://user-images.githubusercontent.com/60461421/213407363-f7165063-4d0b-4875-86ed-46677d5d899d.mp4
 
+Directives app:
+
+https://user-images.githubusercontent.com/60461421/213519406-e500550b-c0dd-4eb7-9105-039c59cd94be.mp4
+
