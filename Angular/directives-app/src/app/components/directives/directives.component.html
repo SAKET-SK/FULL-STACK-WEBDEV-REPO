@@ -1,0 +1,81 @@
+<p>HELLO!!</p>
+
+<hr>
+<style>
+    button{
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+
+    }
+</style>
+<section *ngIf="bool1">
+    <h4>Demonstration of *ngIf</h4>
+    <p *ngIf="boolVal; then one; else two"></p>   <!--From TS file, controlling visibility -->
+    <br>
+
+    <div *ngIf="false">Inside a Div</div>   <!--we make this ngIf false, then it becomes invisible. We can control visibility too-->
+    <br>
+    <ng-template #one>   <!--It will not be rendered (displayed) by default, so we need to it a ID-->
+        We are inside ng-template 1 (IF -> TRUE)
+    </ng-template>
+
+    <ng-template #two>   
+        We are inside ng-template 2 (ELSE -> FALSE)
+    </ng-template>
+
+    <button (click)="alterBool()">Click Here</button>
+    
+</section>
+
+<hr>
+
+<section *ngIf="bool2">
+    <h4>Demonstration of *ngFor</h4>
+
+    <div *ngFor = "let br of berries">
+        {{br}}
+    </div>
+
+    <ol>
+        <li *ngFor = "let br of berries">
+        {{br}}
+    </li>
+    </ol>
+
+</section>
+
+<hr>
+
+<section *ngIf="bool3">
+    <h4>Demonstration of *ngSwitchCase</h4>
+
+    <!--Hardcoded way, not suitable when array is very big-->
+    <!--div [ngSwitch] = myChoice> 
+        <div *ngSwitchCase="'Acaiberry'">You Selected Acaiberry</div>
+        <div *ngSwitchCase="'Blueberry'">You Selected Blueberry</div>
+        <div *ngSwitchCase="'Cranberry'">You Selected Cranberry</div>
+        <div *ngSwitchCase="'Dewberry'">You Selected Dewberry</div>
+        <div *ngSwitchCase="'Elderberry'">You Selected Elderberry</div>
+        <div *ngSwitchCase="'Foxberry'">You Selected Foxberry</div>
+        <div *ngSwitchCase="'Gooseberry'">You Selected Gooseberry</div>
+        <div *ngSwitchDefault>Please choose a valid option</div>
+    </div-->
+
+    <div [ngSwitch] = myChoice>
+        <div *ngFor = "let b of berries">
+            <div *ngSwitchCase="b"> You Selected {{b}} </div>
+        </div>
+        <div *ngSwitchDefault>Please select a valid option</div>
+    </div>
+    <br>
+
+</section>
+<hr>
+<br>
+
+<button (click)="alterVisibility1()">Alter Visibility of *ngIf</button>
+<button (click)="alterVisibility2()">Alter Visibility of *ngFor</button>
+<button (click)="alterVisibility3()">Alter Visibility of *ngSwitchCase</button>
+
+<br>
