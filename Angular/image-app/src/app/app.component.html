@@ -1,0 +1,32 @@
+<style>
+  span{
+    font-size: 30px;
+    font-family:'Courier New';
+    font-weight: bold;
+  }
+
+  button{
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+</style>
+<div style="text-align:center">
+  <img [src]="currentImage" style="width:50%">
+  <br>
+  <span>{{currentName}}</span>
+  <br>
+  <br>
+  <button (click)="changeImage()">Change</button>
+</div>
+
+
+
+
