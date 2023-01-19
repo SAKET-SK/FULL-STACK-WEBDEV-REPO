@@ -5,3 +5,12 @@ App Start Demo:
 Terminal: (used ng serve but that is not visible):
   
 ![terminal](https://user-images.githubusercontent.com/60461421/212317507-5d81191a-07df-46ea-aaae-0e3346b1c406.png)
+
+Craeting component:
+
+![component](https://user-images.githubusercontent.com/60461421/213241109-1453db0c-c73b-4fbc-b64e-52b5e3c93d47.png)
+
+![output_component](https://user-images.githubusercontent.com/60461421/213241172-7005b671-4a54-47b7-ad54-975a458edcbf.png)
+
+
+
