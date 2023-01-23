@@ -1,0 +1,15 @@
+h1{
+    color: red
+}
+
+.txtDanger{
+    color: red;
+    font-family: cursive;
+    background-color: grey;
+}
+
+.txtSuccess{
+    color: blueviolet;
+    font-family: fantasy;
+    background-color: lightcoral;
+}

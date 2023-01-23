@@ -1,0 +1,23 @@
+<p>pipes works!</p>
+
+<div>{{ message }}</div>
+
+<hr>
+<!--STRING PIPES-->
+<h4>String Pipes</h4>
+<div>{{ message | lowercase }}</div>
+<div>{{ message | uppercase }}</div>
+<div>{{ message | titlecase }}</div>
+<div>{{ message | slice: 10:25 | uppercase}}</div>
+
+<!--JSON PIPES-->
+<hr>
+<h4>JSON Pipes</h4>
+<strong>{{emp | json}}</strong>
+
+<!--CURRENCY PIPES-->
+<hr>
+<h4>Currency Pipes</h4>
+<div><strong>{{ price | currency }}</strong></div>
+<div><strong>{{ price | currency:"INR" }}</strong></div>
+<div><strong>{{ price | currency:"GBP" }}</strong></div>

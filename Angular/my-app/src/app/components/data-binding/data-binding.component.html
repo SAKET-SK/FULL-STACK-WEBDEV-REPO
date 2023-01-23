@@ -1,0 +1,63 @@
+
+<hr>
+
+<section>
+    <h4>Demonstration of *ngIf</h4>
+    <p *ngIf="boolVal; then one; else two"></p>   <!--From TS file, controlling visibility -->
+    <br>
+
+    <div *ngIf="false">Inside a Div</div>   <!--we make this ngIf false, then it becomes invisible. We can control visibility too-->
+    <br>
+    <ng-template #one>   <!--It will not be rendered (displayed) by default, so we need to it a ID-->
+        We are inside ng-template 1 (IF -> TRUE)
+    </ng-template>
+
+    <ng-template #two>   
+        We are inside ng-template 2 (ELSE -> FALSE)
+    </ng-template>
+
+    <button class="btn btn-danger" (click) = "alterBool()">Click Here</button>
+    
+</section>
+<hr>
+
+<section *ngIf="bool2">
+    <h4>Demonstration of *ngFor</h4>
+
+    <div *ngFor = "let br of berries">
+        {{br}}
+    </div>
+
+    <ol>
+        <li *ngFor = "let br of berries">
+        {{br}}
+    </li>
+    </ol>
+
+</section>
+
+<hr>
+
+<section *ngIf="bool3">
+    <h4>Demonstration of *ngSwitchCase</h4>
+
+    <div [ngSwitch] = myChoice>
+        <div *ngFor = "let b of berries">
+            <div *ngSwitchCase="b"> You Selected {{b}} </div>
+        </div>
+        <div *ngSwitchDefault>Please select a valid option</div>
+    </div>
+    <br>
+
+</section>
+
+<hr>
+<br>
+
+<h5>ngStyle and ngClass Demo</h5>
+<div [ngStyle] = "myNewStyle">This is the paragraph we will use for demonstration of ngStyle</div>
+<div [ngClass] = "myNewClass">This is the paragraph we will use for demonstration of ngClass</div>
+
+<h1>PIPE COMPONENT</h1>
+
+<hr>
