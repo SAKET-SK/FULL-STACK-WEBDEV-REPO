@@ -13,6 +13,8 @@ import { TdfComponent } from './components/tdf/tdf.component';
 import { RfComponent } from './components/rf/rf.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DirectivesComponent } from './components/directives/directives.component';
+import { SquarePipe } from './shared/square.pipe';
+import { AreaOfCirclePipe } from './shared/area-of-circle.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DirectivesComponent } from './components/directives/directives.componen
     TdfComponent,
     RfComponent,
     PageNotFoundComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    SquarePipe,
+    AreaOfCirclePipe
   ],
   imports: [
     BrowserModule,
