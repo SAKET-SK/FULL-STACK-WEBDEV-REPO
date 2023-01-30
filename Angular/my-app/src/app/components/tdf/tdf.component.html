@@ -1,1 +1,32 @@
-<p>tdf works!</p>
+<form>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Enter First Name : </label>
+            <input type="text" name="fname" #fName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" ngModel required>
+            <div style="color: red" *ngIf="fName.invalid && fName.touched">
+                <div *ngIf="fName.errors?.['required']">
+                    First Name is required
+                </div>
+                <!-- ? = SAFE NAVIGATION OPERATOR -->
+                <div *ngIf="fName.errors?.['pattern']">
+                    First Name must contain minimum 3 and maximum 30 letters
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label>Enter Last Name : </label>
+            <input type="text" name="lname" #lName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" ngModel required>
+            <div style="color: red" *ngIf="lName.invalid && lName.touched">
+                <div *ngIf="lName.errors?.['required']">
+                    Last Name is required
+                </div>
+                <!-- ? = SAFE NAVIGATION OPERATOR -->
+                <div *ngIf="lName.errors?.['pattern']">
+                    Last Name must contain minimum 3 and maximum 30 letters
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</form>
