@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pipes',
@@ -31,7 +32,18 @@ export class PipesComponent implements OnInit {
     {id:1007, name:"Grace", gender:"Female", address:"London", contact:"1298981680"}
   ]
     
+  constructor(private router: Router) { 
+    
+  }
 
-  constructor() { }
   ngOnInit(): void { }
+
+  passId(id: any){
+    console.log(id);
+    this.router.navigate(['/pipes',id])   // pass id onto the url bar if we click on id
+  }
+
+  
+
+
 }

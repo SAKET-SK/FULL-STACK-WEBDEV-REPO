@@ -1,5 +1,30 @@
 <p>pipes works!</p>
 
+<!--CUSTOM PIPES {CREATING OUR OWN PIPE}-->
+<hr>
+<h4>Custom Pipes</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Contact</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let s of students">
+            <td (click)="passId(s.id)">{{ s.id }}</td>
+            <td>{{ s.name | gender:s.gender }}</td>
+            <td>{{ s.gender }}</td>
+            <td>{{ s.address }}</td>
+            <td>{{ s.contact }}</td>
+        </tr>
+    </tbody>
+</table>
+
 <div>{{ message }}</div>
 
 <hr>
@@ -38,30 +63,7 @@
 <div><strong>{{ myNewDate | date:'longDate' }}</strong></div>
 <div><strong>{{ myNewDate | date:'mediumDate' }}</strong></div> <!--Same as only date-->
 
-<!--CUSTOM PIPES {CREATING OUR OWN PIPE}-->
-<hr>
-<h4>Custom Pipes</h4>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Address</th>
-            <th>Contact</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor = "let s of students">
-            <td>{{ s.id }}</td>
-            <td>{{ s.name | gender:s.gender }}</td>
-            <td>{{ s.gender }}</td>
-            <td>{{ s.address }}</td>
-            <td>{{ s.contact }}</td>
-        </tr>
-    </tbody>
-</table>
 
 <hr style="height:2px; border-width:0; color:blue; background-color:blue">
 <!--Custom pipe named square which will return the square of number we pass-->
