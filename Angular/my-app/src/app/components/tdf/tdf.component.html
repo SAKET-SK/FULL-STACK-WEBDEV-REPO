@@ -1,8 +1,9 @@
-<form>
+<form #regForm="ngForm" (ngSubmit)="getData(regForm.value)">
+
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-2">
             <label>Enter First Name : </label>
-            <input type="text" name="fname" #fName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" ngModel required>
+            <input type="text" name="fname" #fName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" placeholder="Enter your first name" ngModel required>
             <div style="color: red" *ngIf="fName.invalid && fName.touched">
                 <div *ngIf="fName.errors?.['required']">
                     First Name is required
@@ -13,9 +14,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+
+        <div class="col-sm-6 mt-2">
             <label>Enter Last Name : </label>
-            <input type="text" name="lname" #lName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" ngModel required>
+            <input type="text" name="lname" #lName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" placeholder="Enter your last name" ngModel required>
             <div style="color: red" *ngIf="lName.invalid && lName.touched">
                 <div *ngIf="lName.errors?.['required']">
                     Last Name is required
@@ -27,6 +29,80 @@
             </div>
         </div>
 
+        
+
+        <div class="col-sm-6 mt-2">
+            <label>Enter Email : </label>
+            <input type="email" name="email" #email="ngModel" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" class="form-control"placeholder="Enter email address" ngModel required>
+            <div style="color: red" *ngIf="email.invalid && email.touched">
+                <div *ngIf="email.errors?.['required']">
+                    Email is required
+                </div>
+                <div *ngIf="email.errors?.['pattern']">
+                    Email must be valid
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 mt-2">
+            <label>Enter Password : </label>
+            <input type="password" name="password" #password="ngModel" pattern="[a-zA-Z0-9 ]{7,20}" class="form-control" placeholder="Enter your password" ngModel required>
+            <div style="color: red" *ngIf="password.invalid && password.touched">
+                <div *ngIf="password.errors?.['required']">
+                    Password is required
+                </div>
+                <div *ngIf="password.errors?.['pattern']">
+                    Password must contain atleast 7-8 characters
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 mt-2">
+            <label>Enter Phone Number : </label>
+            <input type="tel" name="phone" #phone="ngModel" pattern="[0-9]{10}" class="form-control" placeholder="Enter your phone number" ngModel required>
+            <div style="color: red" *ngIf="phone.invalid && phone.touched">
+                <div *ngIf="phone.errors?.['required']">
+                    Phone Number is required
+                </div>
+                <div *ngIf="phone.errors?.['pattern']">
+                    Phone Number must contain 10 characters
+                </div>
+            </div>
+        </div>
+
+            <div class="col-sm-6 mt-2">
+                <label>Select a Course : </label>
+                <select name="course" #course="ngModel" class="form-control" ngModel required>
+                    <option value="">Select a Course</option>
+                    <option [value]="c" *ngFor="let c of courses">{{ c }}</option>
+                </select>
+                <div style="color: red" *ngIf="course.invalid && course.touched">
+                    <div *ngIf="course.errors?.['required']">
+                        Select atleast one course
+                    </div>
+                </div>
+            </div>
+       
+
+        <div class="row">
+            <div class="col-sm-7 mt-2 mb-2">
+                <label class="form-check-label">
+                    <input type="checkbox" name="term" #term="ngModel" ngModel required>
+                    I accept the terms and conditions
+                </label>
+                <div style="color: red" *ngIf="term.invalid && term.touched">
+                    <div *ngIf="term.errors?.['required']">
+                        Please accept the terms and conditions
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary" [disabled]="regForm.invalid">Submit</button>
+            </div>
+        </div>
+        
     </div>
     
 </form>
