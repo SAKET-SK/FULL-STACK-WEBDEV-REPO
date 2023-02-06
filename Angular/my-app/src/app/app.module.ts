@@ -17,6 +17,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { DirectivesComponent } from './components/directives/directives.component';
 import { SquarePipe } from './shared/square.pipe';
 import { AreaOfCirclePipe } from './shared/area-of-circle.pipe';
+import { Comp1Component } from './components/comp1/comp1.component';
+import { Comp2Component } from './components/comp2/comp2.component';
+import { ChangeColorDirective } from './custom-dir/change-color.directive';
+import { MyColorComponent } from './components/my-color/my-color.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { AreaOfCirclePipe } from './shared/area-of-circle.pipe';
     PageNotFoundComponent,
     DirectivesComponent,
     SquarePipe,
-    AreaOfCirclePipe
+    AreaOfCirclePipe,
+    Comp1Component,
+    Comp2Component,
+    ChangeColorDirective,
+    MyColorComponent
   ],
   imports: [
     FormsModule,

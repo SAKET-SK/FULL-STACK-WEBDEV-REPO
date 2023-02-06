@@ -7,6 +7,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AngularFormComponent } from './components/angular-form/angular-form.component';
 import { TdfComponent } from './components/tdf/tdf.component';
 import { RfComponent } from './components/rf/rf.component';
+import { Comp2Component } from './components/comp2/comp2.component';
+import { MyColorComponent } from './components/my-color/my-color.component';
 
 const routes: Routes = [
 
@@ -21,6 +23,9 @@ const routes: Routes = [
 
   {path: "pipes", component: PipesComponent},
   {path: "pipes/:id", component: PipesComponent},
+
+  {path: "comp2", component: Comp2Component},
+  {path: "mycolor", component: MyColorComponent},
 
   {path: "parent", component: ParentComponent},
 

@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-6 mt-2">
             <label>Enter First Name : </label>
-            <input type="text" name="fname" #fName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" placeholder="Enter your first name" ngModel required>
+            <input type="text" name="fname" #fName="ngModel" [pattern]="myNamePattern" class="form-control" placeholder="Enter your first name" ngModel required>
             <div style="color: red" *ngIf="fName.invalid && fName.touched">
                 <div *ngIf="fName.errors?.['required']">
                     First Name is required
@@ -17,7 +17,7 @@
 
         <div class="col-sm-6 mt-2">
             <label>Enter Last Name : </label>
-            <input type="text" name="lname" #lName="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control" placeholder="Enter your last name" ngModel required>
+            <input type="text" name="lname" #lName="ngModel" [pattern]="myNamePattern" class="form-control" placeholder="Enter your last name" ngModel required>
             <div style="color: red" *ngIf="lName.invalid && lName.touched">
                 <div *ngIf="lName.errors?.['required']">
                     Last Name is required
