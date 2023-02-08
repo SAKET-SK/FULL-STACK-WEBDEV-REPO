@@ -9,3 +9,24 @@
 <input type="radio" name="color" (click)="setColor('red')"> Red
 <input type="radio" name="color" (click)="setColor('green')"> Green
 <input type="radio" name="color" (click)="setColor('blue')"> Blue
+
+<hr>
+
+<h2>Services Demo</h2>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pr of myProducts">
+            <td>{{ pr.productId }}</td>
+            <td>{{ pr.productName }}</td>
+            <td>{{ pr.productPrice }}</td>
+        </tr>
+    </tbody>
+</table>

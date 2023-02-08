@@ -29,6 +29,9 @@ const routes: Routes = [
 
   {path: "parent", component: ParentComponent},
 
+  // Lazy Loading :- Doing this for only modules becuase modules have huge set of components in them
+  {path: "crud", loadChildren: () => import("./crud/crud.module").then( m => m.CrudModule)},
+
   // Child Routing
   {path: "forms", component: AngularFormComponent, children: [
     {path: "", component: TdfComponent},
