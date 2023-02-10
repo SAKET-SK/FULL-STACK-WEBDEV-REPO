@@ -4,6 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+
+    "my-json-server":"cd src/app/shared/api/ && json-server --watch db.json",
+    "start-dev":"concurrently \"npm start\" \" npm run my-json-server \"",
+
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
