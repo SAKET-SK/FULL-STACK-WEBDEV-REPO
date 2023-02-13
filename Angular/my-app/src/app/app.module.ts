@@ -22,6 +22,9 @@ import { Comp2Component } from './components/comp2/comp2.component';
 import { ChangeColorDirective } from './custom-dir/change-color.directive';
 import { MyColorComponent } from './components/my-color/my-color.component';
 
+import{ HttpClientModule } from '@angular/common/http';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,13 +43,15 @@ import { MyColorComponent } from './components/my-color/my-color.component';
     Comp1Component,
     Comp2Component,
     ChangeColorDirective,
-    MyColorComponent
+    MyColorComponent,
+    DataBindingComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   
   ],
   providers: [],

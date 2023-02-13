@@ -1,0 +1,52 @@
+<!-- 1. Interpolation    {{ }}   ts => html -->
+<h5>1. Interpolation</h5>
+<p>Welcome {{ username }}</p>
+<p>You are {{ age }} years old</p>
+
+<hr>
+
+<!-- 2. Property Binding    [ ]   ts => html -->
+<h5>2. Property Binding</h5>
+<img [src]="imgPath" alt="nature" height="300px" width="300px">
+<!--img src={{imgPath}} alt="nature" height="300px" width="300px"-->
+
+<hr>
+
+<!-- 3. Event Binding    ( )    html => ts -->
+<h5>3. Event Binding</h5>
+<button (click)="btnClicked()">Click Here</button>
+
+<hr>
+<hr>
+<h3>INTERPOLATION vs PROPERTY BINDING</h3>
+<input type="text" name="" id="" disabled="{{isDisabled}}"> <!--INTERPOLATION : It will have no effect. Text box will remain disabled-->
+<br>
+<input type="text" name="" id="" [disabled]="isDisabled"> <!--PORPERTY BINDING : It will have effect. Text box will remain enabled-->
+
+<!--When using string type values, use Interpolation. Don't use it when using Boolean values.-->
+<!--When using Boolean type values, use Property Binding.-->
+
+<hr>
+<hr>
+
+<!-- 4. Two way Binding  [( )]   ts <=> html, here we use the ngModel directive -->
+<h5>4. Two way Binding</h5>
+<form>
+    <label>Enter your name Admin :- </label>
+    <input type="text" name="name" id="" [(ngModel)]="myName">
+    {{ myName }}
+</form>
+
+<hr>
+
+<!--Reference variable-->
+<!--Reference names can be given to html elements, so that we can use them in our template, wherever required
+Ex:     <input type="text" name="" #myInputBox>
+        <button (click)="showMsg(myInputBox.value)">Show Message</button>-->
+
+<form>
+    <label>Enter your message :- </label>
+    <input type="text" name="" #myInputBox>
+    <br>
+    <button (click)="showMsg(myInputBox.value)">Show Message</button>
+</form>

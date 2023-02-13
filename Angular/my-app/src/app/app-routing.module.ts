@@ -9,6 +9,7 @@ import { TdfComponent } from './components/tdf/tdf.component';
 import { RfComponent } from './components/rf/rf.component';
 import { Comp2Component } from './components/comp2/comp2.component';
 import { MyColorComponent } from './components/my-color/my-color.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
 
 const routes: Routes = [
 
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path: '', component: DirectivesComponent},
   
   // Named Routing
+  {path: "data-binding", component: DataBindingComponent},
   {path: "directives", component: DirectivesComponent},
+  
 
   // Re-direction Routing
   // {path: "directives", redirectTo:"pipes", pathMatch:"full"},
