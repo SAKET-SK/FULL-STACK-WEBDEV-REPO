@@ -1,0 +1,39 @@
+{
+    "Employees": [
+        {
+            "id": 101,
+            "name": "Howard",
+            "post": "Engineer",
+            "salary": 12000,
+            "address": "Paris"
+        },
+        {
+            "id": 102,
+            "name": "Ian",
+            "post": "General Manager",
+            "salary": 50000,
+            "address": "London"
+        },
+        {
+            "id": 103,
+            "name": "Joe",
+            "post": "Associate",
+            "salary": 28000,
+            "address": "USA"
+        },
+        {
+            "id": 104,
+            "name": "Kevin",
+            "post": "Test Lead",
+            "salary": 32000,
+            "address": "Berlin"
+        },
+        {
+            "id": 105,
+            "name": "Lyon",
+            "post": "Engineer",
+            "salary": 12000,
+            "address": "Rome"
+        }
+    ]
+}

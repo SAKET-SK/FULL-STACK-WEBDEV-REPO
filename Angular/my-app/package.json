@@ -4,10 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-
-    "my-json-server":"cd src/app/shared/api/ && json-server --watch db.json",
-    "start-dev":"concurrently \"npm start\" \" npm run my-json-server \"",
-
+    "my-json-server": "cd src/app/shared/api/ && json-server --watch db.json",
+    "start-dev": "concurrently \"npm start\" \" npm run my-json-server \"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -23,7 +21,10 @@
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
     "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0",
     "json-server": "^0.17.1",
+    "ng2-search-filter": "^0.5.1",
+    "ngx-pagination": "^6.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
