@@ -20,6 +20,19 @@ export class DbService {
    return this.http.get("http://localhost:3000/Employees")
   }
 
+  // Reading single record from the server for updation purpose
+  getRecord(id:any){
+    const url = "http://localhost:3000/Employees/" + id
+    return this.http.get(url)
+  }
+
+  // Edit a record
+  // U from CRUD
+  updateRecord(empData:any){
+    const url = "http://localhost:3000/Employees/" + empData.id
+    return this.http.put(url, empData)
+  }
+
   // Delete records from the server
   // D from CRUD
   deleteRecord(id:any){

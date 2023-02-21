@@ -27,8 +27,8 @@
             <td>{{ e.salary }}</td>
             <td>{{ e.address }}</td>
             <td>
-                <button type="button" class="btn btn-outline-info"><i class ="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                -
+                <button type="button" class="btn btn-outline-info" [routerLink]="['edit',e.id]"><i class ="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                💠
                 <button type="button" class="btn btn-outline-danger" (click)="delete(e.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
             </td>
         </tr>

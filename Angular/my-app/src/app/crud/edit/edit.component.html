@@ -1,1 +1,15 @@
-<p>edit works!</p>
+<form #myForm="ngForm" (submit)="putData(myForm.value)">
+    <label>Enter Employee Name : </label>
+    <input type="text" name="fname" class="form-control" [ngModel]="empData?.name" required>
+
+    <label>Enter Employee Post : </label>
+    <input type="text" name="post" class="form-control" [ngModel]="empData?.post" required>
+
+    <label>Enter Employee Salary : </label>
+    <input type="text" name="salary" class="form-control" [ngModel]="empData?.salary" required>
+
+    <label>Enter Employee City : </label>
+    <input type="text" name="address" class="form-control" [ngModel]="empData?.address" required>
+
+    <button type="submit" class="btn btn-warning mt-2" [disabled]="myForm.invalid">Update Details</button>
+</form>
