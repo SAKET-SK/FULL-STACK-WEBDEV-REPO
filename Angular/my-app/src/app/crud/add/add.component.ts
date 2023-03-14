@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DbService } from 'src/app/shared/services/db.service';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-add',
@@ -11,7 +12,7 @@ export class AddComponent implements OnInit {
 
   ngOnInit(): void {}
   
-  constructor(private service : DbService, private router: Router) {}
+  constructor(private service : GlobalService, private router: Router) {}
 
   addData(data:any){
     const empObj = {
@@ -21,7 +22,7 @@ export class AddComponent implements OnInit {
       address: data.ecity
     }
     
-    this.service.addRecord(empObj).subscribe( () => {
+    this.service.addRecord("Employees",empObj).subscribe( () => {
       alert("Record Added")
       this.router.navigate(['/crud'])
     })

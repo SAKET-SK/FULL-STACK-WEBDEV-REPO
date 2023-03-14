@@ -24,6 +24,7 @@ import { MyColorComponent } from './components/my-color/my-color.component';
 
 import{ HttpClientModule } from '@angular/common/http';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
     Comp2Component,
     ChangeColorDirective,
     MyColorComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    LoginComponent
   ],
   imports: [
     FormsModule,
