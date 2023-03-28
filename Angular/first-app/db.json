@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 2,
+      "title": "Syringe",
+      "quantity": 12
+    },
+    {
+      "id": 3,
+      "title": "Cough Pills",
+      "quantity": 7
+    },
+    {
+      "id": 4,
+      "title": "Antiseptic",
+      "quantity": 15
+    },
+    {
+      "id": 5,
+      "title": "Glucose Bottles",
+      "quantity": 8
+    }
+  ]
+}
