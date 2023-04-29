@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "chalk-animation": "^2.0.3",
+    "validator": "^13.9.0"
+  }
+}
