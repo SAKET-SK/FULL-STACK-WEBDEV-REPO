@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "chalk-animation": "^2.0.3",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
     "validator": "^13.9.0"
   }
 }
