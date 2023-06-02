@@ -18,10 +18,17 @@ function authentictor(req, res, next){
 
 // The so called "CONTROLLER"
 app.get('/', (req, res) =>{
-    res.send('This is a Home Page')
+    // res.send('This is a Home Page')
+    res.sendFile(__dirname+'/index.html')    // Serving an HTML page
 })
-app.get('/users', (req, res) =>{
-    res.send('This is a User Page')
+app.get('/service', (req, res) =>{
+    res.send('This is a Service Page')
+})
+app.get('/about', (req, res) =>{
+    res.send('This is a About Page')
+})
+app.get('/contact', (req, res) =>{
+    res.send('This is a Contact Page')
 })
 app.listen(1111, () =>{
     console.log('Express-Server started at port 1111')
