@@ -10,8 +10,22 @@ router.get('/',(req,res)=>{
 
 // Handle POST requests for product i.e. I want to create a new product {CREATE}
 router.post('/',(req,res)=>{
+
+    // Body Parser will make following properties available
+    // console.log(req.body)
+    // console.log(req.body.name)
+    // console.log(req.body.price)
+
+    // Temp JSON object
+    const tempProduct = {
+        name: req.body.name,
+        price: req.body.price
+    }
+
     res.status(200).json({
-        msg: "This is a POST request for products"
+        msg: "This is a POST request for products",
+        statusMsg: "Product Added",
+        product: tempProduct
     })
 })
 
