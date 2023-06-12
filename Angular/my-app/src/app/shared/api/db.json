@@ -2,9 +2,9 @@
   "Employees": [
     {
       "id": 102,
-      "name": "Alexius",
-      "post": "Senior Manager ",
-      "salary": "60000",
+      "name": "Alex",
+      "post": "Junior Manager ",
+      "salary": "20000",
       "address": "Moscow"
     },
     {
@@ -43,8 +43,7 @@
       "id": 107
     }
   ],
-
-  "Users":[
+  "Users": [
     {
       "id": "201",
       "username": "admin1",

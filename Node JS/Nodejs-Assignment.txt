@@ -1,0 +1,7 @@
+#Task
+    > Explore methods from the path module
+    > Explore methods from the os module
+
+Assignment:
+    1. Implement the demo shown during the session
+    2. Use another template engine - 'ejs'

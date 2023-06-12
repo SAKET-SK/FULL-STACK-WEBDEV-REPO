@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DemoService } from 'src/app/shared/services/demo.service';
 
 @Component({
   selector: 'app-data-binding',
@@ -24,7 +25,9 @@ export class DataBindingComponent implements OnInit {
     alert(msg);
   }
 
-  constructor() {}
+  constructor(private service: DemoService) {
+    alert()
+  }
   ngOnInit(): void {}
 
 }

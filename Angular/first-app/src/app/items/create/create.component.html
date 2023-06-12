@@ -1,0 +1,14 @@
+<div class="container">
+    <legend>Create Item</legend>
+    <form>
+      <div class="mb-3">
+        <label for="txtName" class="form-label">Name</label>
+        <input type="text" name="name" [(ngModel)] = "itemForm.title" class="form-control" id="txtName" />
+      </div>
+      <div class="mb-3">
+        <label for="txtQuantity" class="form-label">Quantity</label>
+        <input type="number" name="quantity" [(ngModel)] = "itemForm.quantity" class="form-control" id="txtQuantity" />
+      </div>
+      <button type="button" (click)="create()" class="btn btn-primary">Add Item</button>
+    </form>
+  </div>

@@ -1,0 +1,317 @@
+
+
+17-Feb-2023
+===================
+# Node Introduction
+
+- Runtime Environment
+    -> Helps us to run a program on a particular OS
+    -> Example: JRE (Java Runtime Environment) - It helps to run the same Java code on any OS (Win, Mac, Linux, Solaris)
+
+- Setup (Installation)
+    -> Visit the site https://nodejs.org/en/
+    -> Download the LTS version for your machine
+    -> Install Node.js
+    -> Check the versions for 
+        --> node -v
+        --> npm -v
+
+21-Feb-2023
+============
+
+# Node REPL (Read-Eval-Print-Loop)
+    > It is a command line based tool
+    > We can issue the Node commands/ JavaScript Code in this
+    > Ctrl + D to come out of REPL
+    > .save to save into file
+    > .load to load from a file
+
+# Node Module types
+    1. Core Modules         > Provided by Node.js
+    2. Local Modules        > Which we will develop
+    3. Third party Modules  > Download from sites like npm repository
+
+# Core Modules
+    http           -> To create http server in node.js
+    os             -> Provides info about operating system
+    path           -> To handle the file path
+    querystring    -> To handle url query string
+    fs             -> To handle file system in the computer 
+    util           -> To access utility functions
+    url            -> To parse the url strings
+
+# Global Objects
+    > Which we can access anywhere when required
+    1. __dirname
+    2. __filename
+
+#Task
+    > Explore methods from the path module
+    > Explore methods from the os module
+
+# Third party modules:
+    1. https://www.npmjs.com/package/chalk-animation
+    2. https://www.npmjs.com/package/validator
+    
+
+23-Feb-2023
+============
+
+# Node.js Architecture
+    > Single threaded non-blocking
+    > Event Loop
+    > https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+# Events
+    > Any action that happens is an Event
+    > Nodejs is also known as Event Driven
+    > Create an Event Emitter to emit the Event
+        const emitter = new event.EventEmitter()
+    > Add the listener which listens to that event
+        emitter.on("party", function(){
+            console.log("Party started....")
+        })
+    > Emit the event
+        emitter.emit("party1")
+
+27-Feb-2023
+============
+
+# FS Module:
+    We ue this core module when we need to perform any file operation
+    - fs modules gives us 2 version of commonly used methods
+    - Sync and Async
+    Example: readFile(...) and readFileSync(...)
+    - We should always prefer to read using the Async, means - readFile(...).
+    - Using async versions of a method make sure that we do not block our thread
+
+01-Mar-2023
+============
+
+# http Module:
+    1. Import the http module
+    2. Create the server using .createServer() method
+    3. Starting listening to incoming requests using .listen()
+
+> npm i dotenv (to store variables separately in a .env file)
+> npm i nodemon (to automatically restart the app, when any file changes)
+
+# Streams:
+    - Create a readable Stream
+    - Create a writable stream
+    - Transfer data using 2 ways
+        1. Using event handler
+        2. Using pipe
+
+06-Mar-2023
+============
+
+# Server (serving html pages)
+
+    When the server receives a request for some resource, it need to send it back
+    In below case we are sending back the html!
+    // To handle two paths -> / and /home
+    if(req.url =="/" || req.url=="/home"){
+        res.setHeader('content-type','text/html')
+        res.statusCode = 200
+        const stream = fs.createReadStream(__dirname + "/index.html","utf-8")
+        stream.pipe(res)
+    } 
+    JSON.stringify() -> Convert JSON object to a string
+    JSON.parse()     -> Convert a string into a JSON object
+
+# Express(JS) Middleware
+
+    Steps:
+    1:  npm install express
+    2:  Use require
+
+
+08-Mar-2023
+============
+
+# Serve html files through Express:
+    res.sendFile(__dirname+"/index.html")
+
+# Web Server Project (create a new folder -> web-server)
+    Step-1:  create package.json file
+            >> npm init
+    
+    Step-2: Install express
+            >> npm install express
+
+    Step-3: Install dotenv
+            >> npm install dotenv
+    
+    Step-4: Install nodemon
+            >> npm install nodemon
+
+    Step-5: Implement app.js file
+
+    Step-6: Execute the server
+
+
+09-Mar-2023
+============
+
+# Template Engine
+    https://expressjs.com/en/guide/using-template-engines.html
+
+    1. Install hbs
+        https://www.npmjs.com/package/hbs
+    2. Create files with .hbs extension
+    3. Configure the hbs template engine
+    4. Render the page in respective functions
+
+Assignment:
+    1. Implement the demo shown during the session
+    2. Use another template engine - 'ejs'
+
+12-Mar-2023
+============
+
+# API - Application Programming Interface
+    REST API -> REpresentationl State Transfer
+    
+    CRUD operations
+    Create   -> POST
+    Read     -> GET
+    Update   -> PUT
+    Delete   -> DELETE
+
+    Endpoint:
+        > They are URLs that represent a particular resource
+        > http://www.fbs.com/api/employees
+        [All operations on this employees will use this endpoint]
+
+        [GET Employee]
+            http://www.fbs.com/api/employees 
+        Response:
+            Data of all employees in JSON format
+
+        [GET an Employee]
+            http://www.fbs.com/api/employees/101
+        Response:
+            Data of employee with id = 101 
+
+        [POST an Employee]
+            http://www.fbs.com/api/employees
+            Pass JSON data to be added (in request body)
+        Response:
+            Data of newly added employee
+
+        [PUT an Employee]
+            http://www.fbs.com/api/employees
+            Pass JSON data to be updated (in request body) 
+        Response:
+            Data of updated employee
+
+        [DELETE an Employee]
+            http://www.fbs.com/api/employees/105
+        Response:
+            Deletes the employee with id = 105
+
+# Create our own REST API
+    1) Create a new folder
+    2) Install required modules (express,dotenv,nodemon)
+
+    3) Implement app.js to send a JSON reponse
+    4) Use app.js in server.js to create the server and listen to incoming requests
+
+# Test the REST API
+    1) Install Thunder Client plugin for VS Code
+    2) Use POSTMAN
+
+# Design for our API
+
+    /products                    /orders
+    GET    POST                GET      POST
+
+    /products/{id}              /orders/{id}
+    GET  PUT  DELETE         GET  PUT  DELETE
+
+    1) Create a products.js to implement product route
+    2) Use it in the app.js
+
+# Create a command to start our app
+    > Go to package.json
+    > Add following command (under scripts):
+        "start": "nodemon server.js"
+    > Now we will just say "npm start" whenever we want to run our app
+
+# Morgan library
+    > Third party library to log HTTP request information
+    > https://www.npmjs.com/package/morgan
+      npm i morgan
+    > Make following changes to app.js
+        const morgan = require('morgan')
+        app.use(morgan("dev"))
+    > Output:
+        [nodemon] starting `node server.js`
+        Server started at localhost:3007 
+        DELETE /products/101 200 2.255 ms - 57  ---> Morgan output
+        GET /products/101 200 0.571 ms - 54     ---> Morgan output
+
+14-Mar-2023
+============
+
+# Body parser (Middleware)
+    https://www.npmjs.com/package/body-parser
+
+    > Install the module
+        npm install body-parser
+    > const bodyParser = require('body-parser')
+      app.use(bodyParser.urlencoded({extended: true}))
+      app.use(bodyParser.json({extended: true}))  
+    NOTE: This middleware should be used before any other middleware you are using in the app.js
+
+# MongoDB Atlas
+    > https://www.mongodb.com/atlas/database
+
+    > Register on this site using your email id
+
+15-Mar-2023
+============
+> Mongo Atlas demo
+
+17-Mar-2023
+============
+
+# Connecting to MongoDB
+    We can connect to any Mongo Database by
+    1) Mongo Compass (GUI Client)
+    2) Mongo Shell (Command prompt shell)
+    3) Node app
+
+To connect to a mongo db from Node application, we will use a third party library
+    > Mongoose
+        https://mongoosejs.com/
+    > Install
+        npm i mongoose
+    > Test the connection using mongoose.connect method
+
+Products implementation:
+    > We are going to create an API for products
+    > When we have to get the data from the server to the client or client to the server, we need to define a Model 
+    > To use mongoose, we need to define this model, also known as Schema !
+    > A Schema is the structure of our data !! (which we want to store/read)
+
+19-Mar-2023
+============
+
+    Create a Model
+    Save data to Mongo Atlas using Mongoose 
+
+
+20-Mar-2023
+============
+    Promises -> It will have call backs
+    async-await -> It will not have call backs
+
+    CRUD Operations:
+    
+    POST:        product.save();
+    GET(all):    Product.find(); 
+    GET(single): Product.findById(req.params.productId);
+    PUT:         Product.findByIdAndUpdate(req.params.productId, req.body);
+    DELETE:      Product.findByIdAndDelete(req.params.productId);

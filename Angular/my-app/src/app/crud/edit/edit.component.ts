@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DbService } from 'src/app/shared/services/db.service';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-edit',
@@ -12,12 +13,12 @@ export class EditComponent implements OnInit {
   id: any
   empData: any
 
-  constructor(private route: ActivatedRoute, private service: DbService, private router: Router) {}
+  constructor(private route: ActivatedRoute, private service: GlobalService, private router: Router) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((para) => {
       this.id = para.get('id')
-      this.service.getRecord(this.id).subscribe((res) => {
+      this.service.getRecord("Employees",this.id).subscribe((res) => {
         this.empData = {...res}    // Doing this will store the data in object format
       })
     })
@@ -33,7 +34,7 @@ export class EditComponent implements OnInit {
       address: val.address
     }
 
-    this.service.updateRecord(emp).subscribe(()=>{
+    this.service.updateRecord("Employees",emp).subscribe(()=>{
       alert("Record Updated")
       this.router.navigate(['/crud'])
     })

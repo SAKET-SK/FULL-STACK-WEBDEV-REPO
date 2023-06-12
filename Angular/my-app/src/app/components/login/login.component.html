@@ -1,0 +1,11 @@
+<div class="myLoginBox">
+    <form>
+        <label>Username : </label>
+        <input type="text" name="username" placeholder="Enter Username" class="form-control" [(ngModel)]="username">
+
+        <label>Password : </label>
+        <input type="password" name="password" placeholder="Enter Password" class="form-control" [(ngModel)]="password">
+
+        <button type="button" class="btn btn-primary mt-2" (click)="login()">Login</button>
+    </form>
+</div>
