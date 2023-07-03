@@ -1,5 +1,7 @@
 const express = require('express')
 const router = express.Router()
+const Product = require('../model/product')
+const mongoose = require('mongoose')
 
 // Handle GET requests for products i.e. send me the list of all available products {READ}
 router.get('/',(req,res)=>{
@@ -16,17 +18,34 @@ router.post('/',(req,res)=>{
     // console.log(req.body.name)
     // console.log(req.body.price)
 
-    // Temp JSON object
-    const tempProduct = {
+    // 1) Create an OBJECT of the MODEL
+    const product = new Product({
+        _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         price: req.body.price
-    }
+    })
+
+    // 2) Save this to MongoDB Database
+    product.save()
+    .then((res)=>{
+        console.log(res)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+    // // Temp JSON object
+    // const tempProduct = {
+    //     name: req.body.name,
+    //     price: req.body.price
+    // } 
 
     res.status(200).json({
         msg: "This is a POST request for products",
         statusMsg: "Product Added",
-        product: tempProduct
+        product: product      //tempProduct
     })
+    
 })
 
 // Handle GET requests for SINGLE product
