@@ -5,6 +5,7 @@ const productsRouter = require('./api/routes/products')
 const morgan = require('morgan');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 // app.use((req,res)=>{
 //     res.status(200).json({
@@ -17,8 +18,7 @@ app.use(bodyParser.json({extended: true}))
 
 app.use(morgan("dev"))
 
-const uri = "mongodb+srv://saketkhopkar910:saket%40910@cluster0.sftltxg.mongodb.net/school"
-mongoose.connect(uri)
+mongoose.connect(process.env.mongoConnection)
 
 app.use('/products', productsRouter)
 
