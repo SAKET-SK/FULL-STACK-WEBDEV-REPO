@@ -12,7 +12,10 @@ Folder Named Login Page - Copy is the form I have been working with. In that Dat
 
 Rest other folders are related to different web development topics and concepts
 
-Output Section:
+# Notes Section:
+Here are the notes which I took as I learned each and every topic. You can view the notes on https://saketsk.hashnode.dev/
+
+# Output Section:
 - Output of tablecell.html
 
 ![tablecell output](https://user-images.githubusercontent.com/60461421/201687656-42db7186-c197-4c01-9be9-cb1eda1632f1.png)
