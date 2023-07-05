@@ -32,8 +32,6 @@ Rest other folders are related to different web development topics and concepts
 | A14 |  | Row 3 Column 3 | Row 3 Column 4 |
 | A15 |  | Row 3 Column 3 | Row 3 Column 4 |
 
-Here are the notes which I took as I learned each and every topic. You can view the notes on https://saketsk.hashnode.dev/
-
 # Output Section:
 - Output of tablecell.html
 
