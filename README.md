@@ -13,6 +13,25 @@ Folder Named Login Page - Copy is the form I have been working with. In that Dat
 Rest other folders are related to different web development topics and concepts
 
 # Notes Section:
+
+| Angular | Node & Express | MongoDB | React |
+| --------------- | --------------- | --------------- | --------------- |
+| <a href="https://saketsk.hashnode.dev/day-1-angular-into-the-background">Into the Background</a> | <a href="https://saketsk.hashnode.dev/day-1-nodejs-introduction">NodeJS Introduction</a> | Row 1 Column 3 | Row 1 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-2-angular-running-your-first-angular-application">Running your first Angular Application</a> | <a href="https://saketsk.hashnode.dev/day-2-nodejs-node-repl-and-modules">Node REPL and Modules</a> | Row 2 Column 3 | Row 2 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-3-angular-data-binding-concepts">Data Binding Concepts</a> | <a href="https://saketsk.hashnode.dev/day-3-nodejs-nodejs-architecture-nodejs-events">NodeJS Architecture and Events</a> | Row 3 Column 3 | Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-4-angular-structural-directives">Structural Directives</a> | <a href="https://saketsk.hashnode.dev/day-4-nodejs-fs-module">FS Module</a> | Row 3 Column 3 | Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-5-angular-attribute-directives">Attribute Directives</a> | <a href="https://saketsk.hashnode.dev/day-5-nodejs-http-module-working-with-streams">http Module and Working with Streams</a> | Row 3 Column 4 |  Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-6-angular-all-about-pipes">All About Pipes</a> | <a href="https://saketsk.hashnode.dev/day-6-nodejs-working-with-server-and-expressjs">Working with Server & ExpressJS</a> | Row 3 Column 3 | Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-7-angular-input-and-output-decorators">Input and Output Decorators</a> | <a href="https://saketsk.hashnode.dev/day-7-nodejs-serving-files-via-expressjs-creating-a-simple-web-server">Serving Files via ExpressJS & Creating a Web Server</a> | Row 3 Column 3 | Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-8-angular-routing">Routing</a> | <a href="https://saketsk.hashnode.dev/day-8-nodejs-template-engine">Template Engine</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A9 | <a href="https://saketsk.hashnode.dev/day-9-nodejs-creating-our-own-rest-api">Creating our own REST-API</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A10 | <a href="https://saketsk.hashnode.dev/day-10-nodejs-body-parser-middleware">Body Parser Middleware</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A11 | <a href="https://saketsk.hashnode.dev/day-11-nodejs-all-about-mongodb-atlas">All about MongoDB Atlas</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A12 | <a href="https://saketsk.hashnode.dev/day-12-nodejs-connection-to-mongodb-using-mongoose">Connection to MongoDB using Mongoose</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A13 | <a href="https://saketsk.hashnode.dev/day-13-nodejs-crud-operations-via-nodejs-to-mongodb">CRUD operations via NodeJS to MongoDB</a> | Row 3 Column 3 | Row 3 Column 4 |
+| A14 |  | Row 3 Column 3 | Row 3 Column 4 |
+| A15 |  | Row 3 Column 3 | Row 3 Column 4 |
+
 Here are the notes which I took as I learned each and every topic. You can view the notes on https://saketsk.hashnode.dev/
 
 # Output Section:
