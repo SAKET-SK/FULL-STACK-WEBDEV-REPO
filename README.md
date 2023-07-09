@@ -27,7 +27,7 @@ Rest other folders are related to different web development topics and concepts
 | <a href="https://saketsk.hashnode.dev/day-9-angular-angular-forms">Angular Forms</a> | <a href="https://saketsk.hashnode.dev/day-9-nodejs-creating-our-own-rest-api">Creating our own REST-API</a> | Row 3 Column 3 | Row 3 Column 4 |
 | <a href="https://saketsk.hashnode.dev/day-10-angular-viewchild-decorator-custom-directives">ViewChild Decorator and Custom Directives</a> | <a href="https://saketsk.hashnode.dev/day-10-nodejs-body-parser-middleware">Body Parser Middleware</a> | Row 3 Column 3 | Row 3 Column 4 |
 | <a href="https://saketsk.hashnode.dev/day-11-angular-services-creating-a-simple-angular-service">Services: Creating a Simple Angular Service</a> | <a href="https://saketsk.hashnode.dev/day-11-nodejs-all-about-mongodb-atlas">All about MongoDB Atlas</a> | Row 3 Column 3 | Row 3 Column 4 |
-| A12 | <a href="https://saketsk.hashnode.dev/day-12-nodejs-connection-to-mongodb-using-mongoose">Connection to MongoDB using Mongoose</a> | Row 3 Column 3 | Row 3 Column 4 |
+| <a href="https://saketsk.hashnode.dev/day-12-angular-crud-operations-using-json-server">Angular CRUD operations using JSON Server</a> | <a href="https://saketsk.hashnode.dev/day-12-nodejs-connection-to-mongodb-using-mongoose">Connection to MongoDB using Mongoose</a> | Row 3 Column 3 | Row 3 Column 4 |
 | A13 | <a href="https://saketsk.hashnode.dev/day-13-nodejs-crud-operations-via-nodejs-to-mongodb">CRUD operations via NodeJS to MongoDB</a> | Row 3 Column 3 | Row 3 Column 4 |
 | A14 |  | Row 3 Column 3 | Row 3 Column 4 |
 | A15 |  | Row 3 Column 3 | Row 3 Column 4 |
