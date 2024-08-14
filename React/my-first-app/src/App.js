@@ -1,12 +1,12 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Greeting from './Greeting';
 
 function App() {
-  const name = 'React Learner';
   return (
     <div className="App">
-      <h1>Hello, {name}!</h1>
-      <p>Welcome to your first React app.</p>
+      <Greeting name="John" />
+      <Greeting name="Jane" />
+      <Greeting name="Doe" />
     </div>
   );
 }
