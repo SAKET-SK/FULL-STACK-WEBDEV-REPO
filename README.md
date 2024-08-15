@@ -10,9 +10,9 @@ Folder Named Login Page - Copy is the form I have been working with. In that Dat
 5) pathology_data.sql:- This is a database file that will be updated after every updation in the code.
 6) add-category.html:- One can also refer to this file for connection to the database, very similar yet a bit different from the Login-Page and Category.html (This is inside the Login-Page and Category folder)
 
-Rest other folders are related to different web development topics and concepts
+The other folders are related to different web development topics and concepts
 
-# Notes Section:
+# Notes (Blogs) Section:
 
 | Angular | Node & Express | MongoDB | React |
 | --------------- | --------------- | --------------- | --------------- |
