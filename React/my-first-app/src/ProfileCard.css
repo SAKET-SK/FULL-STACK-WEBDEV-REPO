@@ -1,0 +1,19 @@
+.profile-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: wheat;
+    width: 50%;
+  }
+
+  .profile-card:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-card h2 {
+    margin-top: 0;
+  }
+  
