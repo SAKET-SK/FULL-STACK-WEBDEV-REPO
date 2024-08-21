@@ -14,7 +14,7 @@ The other folders are related to different web development topics and concepts
 
 # Notes (Blogs) Section:
 
-| Angular | Node & Express | MongoDB | React |
+| Angular | Node & Express | MongoDB | React / Redux |
 | --------------- | --------------- | --------------- | --------------- |
 | <a href="https://saketsk.hashnode.dev/day-1-angular-into-the-background" target="_blank">Into the Background</a> | <a href="https://saketsk.hashnode.dev/day-1-nodejs-introduction" target="_blank">NodeJS Introduction</a> | <a href="https://saketsk.hashnode.dev/day-1-mongodb-introduction-to-mongodb" target="_blank">Introduction to MongoDB</a> | <a href="https://saketsk.hashnode.dev/day-1-reactjs-introduction" target="_blank">ReactJS Introduction</a> |
 | <a href="https://saketsk.hashnode.dev/day-2-angular-running-your-first-angular-application" target="_blank">Running your first Angular Application</a> | <a href="https://saketsk.hashnode.dev/day-2-nodejs-node-repl-and-modules" target="_blank">Node REPL and Modules</a> | <a href="https://saketsk.hashnode.dev/day-2-mongodb-getting-started-with-mongodb" target="_blank">Getting Started with MongoDB</a> | <a href="https://saketsk.hashnode.dev/day-2-reactjs-components-and-props" target="_blank">Components and Props</a> |
