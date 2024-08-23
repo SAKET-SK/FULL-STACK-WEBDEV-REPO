@@ -1,10 +1,10 @@
 import React from 'react';
-import UserProfile from './components/UserProfile';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
     <div className="App">
-      <UserProfile />
+      <LikeButton />
     </div>
   );
 }
